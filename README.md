@@ -1,7 +1,7 @@
 # algo-study
 역량 강화를 위한 알고리즘 스터디
 
-시간 : 매주
+시간 : 매주 목요일 19:40
 
 마감 기한 : 매주 수요일 오후 6시
 
@@ -34,6 +34,20 @@
 - 모든 팀원들이 리뷰를 마친 후 merge
 
 # 문제
+
+<details>
+    <summary><strong>🚗️ 2주차: 2023-07-20 ~ 2022-7-27</strong></summary>
+<br/>
+
+|                                                               문제                                                               |
+|:------------------------------------------------------------------------------------------------------------------------------:|
+|          [재미있는 오셀로 게임](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWQmA4uK8ygDFAXj)          |
+|           [농작물 수확하기](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV7GLXqKAWYDFAXB)            |
+| [\[S/W 문제해결 기본\] 1일차 - Flatten](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV139KOaABgCFAYh) |
+|           [쇠막대기 자르기](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWVl47b6DGMDFAXm)            |
+|           [상호의 배틀필드](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5LyE7KD2ADFAXc)            |
+
+</details>
 
 <details>
     <summary><strong>✈️ 1주차: 2023-07-17 ~ 2022-7-20</strong></summary>
