@@ -6,7 +6,7 @@ import java.util.StringTokenizer;
 
 public class Boj2798 {
 
-	public static void main(String[] args) throws Exception{
+	public static void main(String[] args) throws Exception{ //
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st;
 		int [] arr;
