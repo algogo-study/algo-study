@@ -42,10 +42,10 @@
 |                                                               문제                                                               |
 |:------------------------------------------------------------------------------------------------------------------------------:|
 |          [재미있는 오셀로 게임](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWQmA4uK8ygDFAXj)          |
-|           [농작물 수확하기](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV7GLXqKAWYDFAXB)            |
 | [\[S/W 문제해결 기본\] 1일차 - Flatten](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV139KOaABgCFAYh) |
 |           [쇠막대기 자르기](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWVl47b6DGMDFAXm)            |
 |           [상호의 배틀필드](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5LyE7KD2ADFAXc)            |
+|                                         [괄호 추가하기](https://www.acmicpc.net/problem/16637)                                    |
 
 </details>
 
