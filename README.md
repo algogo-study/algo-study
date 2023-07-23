@@ -36,7 +36,7 @@
 # 문제
 
 <details>
-    <summary><strong>🚗️ 2주차: 2023-07-20 ~ 2022-7-27</strong></summary>
+    <summary><strong>🚗️ 2주차: 2023-07-20 ~ 2023-07-27</strong></summary>
 <br/>
 
 |                                                               문제                                                               |
@@ -50,7 +50,7 @@
 </details>
 
 <details>
-    <summary><strong>✈️ 1주차: 2023-07-17 ~ 2022-7-20</strong></summary>
+    <summary><strong>✈️ 1주차: 2023-07-17 ~ 2023-07-20</strong></summary>
 <br/>
   
 |                                                              문제                                                              |
