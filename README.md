@@ -41,7 +41,7 @@
 
 |                                   문제                                   |
 |:----------------------------------------------------------------------:|
-| [교환학생](https://swexpertacademy.com/main/code/problem/problemDetail.do) |
+| [교환학생](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AXxNn6GaPW4DFASZ) |
 |         [Four Squares](https://www.acmicpc.net/problem/17626)          |
 |              [촌수계산](https://www.acmicpc.net/problem/2644)              |
 |             [안전 영역](https://www.acmicpc.net/problem/2468)              |
