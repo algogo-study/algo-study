@@ -13,27 +13,41 @@
 # 참여 방법
 
 - 알고리즘 파일 및 간단한 리뷰 파일을 포함하여 작성
-  - 접근 방식, 실패 이유 등에 대해 간략하게 작성
+    - 접근 방식, 실패 이유 등에 대해 간략하게 작성
 
 ## 커밋 메시지 양식
 
 - [출처, 문제 번호] 문제 제목
-  - e.g.
-    - `[BOJ 1234] 안녕하세요`
-   
+    - e.g.
+        - `[BOJ 1234] 안녕하세요`
+
 ## 폴더 구조
 
 - 출처/문제 번호/닉네임/
-  - e.g.
-    - BOJ/1234/whgdk123/
+    - e.g.
+        - BOJ/1234/whgdk123/
 
 ## PR 규칙
 
 - 닉네임/N주차 형식으로 브랜치 생성
-  - e.g. whgdkdyd123/week-19
+    - e.g. whgdkdyd123/week-19
 - 모든 팀원들이 리뷰를 마친 후 merge
 
 # 문제
+
+<details>
+    <summary><strong>🛺️ 3주차: 2023-07-27 ~ 2023-08-03</strong></summary>
+<br/>
+
+|                                   문제                                   |
+|:----------------------------------------------------------------------:|
+| [교환학생](https://swexpertacademy.com/main/code/problem/problemDetail.do) |
+|         [Four Squares](https://www.acmicpc.net/problem/17626)          |
+|              [촌수계산](https://www.acmicpc.net/problem/2468)              |
+|             [안전 영역](https://www.acmicpc.net/problem/2468)              |
+|            [캐슬 디펜스](https://www.acmicpc.net/problem/17135)             |
+
+</details>
 
 <details>
     <summary><strong>🚗️ 2주차: 2023-07-20 ~ 2023-07-27</strong></summary>
@@ -53,7 +67,7 @@
 <details>
     <summary><strong>✈️ 1주차: 2023-07-17 ~ 2023-07-20</strong></summary>
 <br/>
-  
+
 |                                                              문제                                                              |
 |:----------------------------------------------------------------------------------------------------------------------------:|
 |           [안경이 없어!](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWl0ZQ8qn7UDFAXz)           |
