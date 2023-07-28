@@ -43,7 +43,7 @@
 |:----------------------------------------------------------------------:|
 | [교환학생](https://swexpertacademy.com/main/code/problem/problemDetail.do) |
 |         [Four Squares](https://www.acmicpc.net/problem/17626)          |
-|              [촌수계산]([https://www.acmicpc.net/problem/2468](https://www.acmicpc.net/problem/2644))              |
+|              [촌수계산](https://www.acmicpc.net/problem/2644)              |
 |             [안전 영역](https://www.acmicpc.net/problem/2468)              |
 |            [캐슬 디펜스](https://www.acmicpc.net/problem/17135)             |
 
