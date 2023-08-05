@@ -1,4 +1,5 @@
 # algo-study
+
 역량 강화를 위한 알고리즘 스터디
 
 시간 : 매주 목요일 19:40
@@ -36,16 +37,30 @@
 # 문제
 
 <details>
+    <summary><strong>🛞 4주차: 2023-08-03 ~ 2023-08-10</strong></summary>
+<br/>
+
+|                                                   문제                                                    |
+|:-------------------------------------------------------------------------------------------------------:|
+|                           [계란으로 계란치기](https://www.acmicpc.net/problem/16987)                            |
+|                              [자두 나무](https://www.acmicpc.net/problem/2240)                              |
+|                             [인구 이동](https://www.acmicpc.net/problem/16234)                              |
+| [등산로 조성](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PoOKKAPIDFAUq) |
+| [줄기세포배양](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRJ8EKe48DFAUo) |
+
+</details>
+
+<details>
     <summary><strong>🛺️ 3주차: 2023-07-27 ~ 2023-08-03</strong></summary>
 <br/>
 
-|                                   문제                                   |
-|:----------------------------------------------------------------------:|
+|                                                  문제                                                   |
+|:-----------------------------------------------------------------------------------------------------:|
 | [교환학생](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AXxNn6GaPW4DFASZ) |
-|         [Four Squares](https://www.acmicpc.net/problem/17626)          |
-|              [촌수계산](https://www.acmicpc.net/problem/2644)              |
-|             [안전 영역](https://www.acmicpc.net/problem/2468)              |
-|            [캐슬 디펜스](https://www.acmicpc.net/problem/17135)             |
+|                         [Four Squares](https://www.acmicpc.net/problem/17626)                         |
+|                             [촌수계산](https://www.acmicpc.net/problem/2644)                              |
+|                             [안전 영역](https://www.acmicpc.net/problem/2468)                             |
+|                            [캐슬 디펜스](https://www.acmicpc.net/problem/17135)                            |
 
 </details>
 
@@ -59,8 +74,8 @@
 | [\[S/W 문제해결 기본\] 1일차 - Flatten](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV139KOaABgCFAYh) |
 |           [쇠막대기 자르기](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWVl47b6DGMDFAXm)            |
 |           [상호의 배틀필드](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5LyE7KD2ADFAXc)            |
-|                                         [~~괄호 추가하기~~](https://www.acmicpc.net/problem/16637)                                    |
-|                                              [배열 돌리기 1](https://www.acmicpc.net/problem/16926)                                    |
+|                                      [~~괄호 추가하기~~](https://www.acmicpc.net/problem/16637)                                      |
+|                                       [배열 돌리기 1](https://www.acmicpc.net/problem/16926)                                        |
 
 </details>
 
