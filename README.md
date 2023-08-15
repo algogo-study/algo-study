@@ -37,7 +37,21 @@
 # 문제
 
 <details>
-    <summary><strong>🛞 4주차: 2023-08-03 ~ 2023-08-10</strong></summary>
+    <summary><strong>🚨 5주차: 2023-08-03 ~ 2023-08-10</strong></summary>
+<br/>
+
+|                                                               문제                                                                |
+|:-------------------------------------------------------------------------------------------------------------------------------:|
+| [\[S/W 문제해결 기본\] 5일차 - Magnetic](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV14hwZqABsCFAYD) |
+|                                         [아기 상어](https://www.acmicpc.net/problem/16236)                                          |
+|                                         [다리 만들기](https://www.acmicpc.net/problem/2146)                                          |
+|                                        [백양로 브레이크](https://www.acmicpc.net/problem/11562)                                        |
+|     [\[모의 SW 역량테스트\] 무선 충전](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRDL1aeugDFAUo)      |
+
+</details>
+
+<details>
+    <summary><strong>🚔 4주차: 2023-08-03 ~ 2023-08-10</strong></summary>
 <br/>
 
 |                                                   문제                                                    |
