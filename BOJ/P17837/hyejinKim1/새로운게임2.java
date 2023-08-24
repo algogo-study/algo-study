@@ -1,10 +1,8 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Queue;
 
 //미구현
 
@@ -12,9 +10,8 @@ public class 새로운게임2 {
 
 	static int n, m, answer, hcount = 0;
 	static Box[][] board;
+	static Horse [] ho;
 	static int[][] d = { { 0, 1 }, { 0, -1 }, { -1, 0 }, { 1, 0 } };
-
-	static Queue<Integer[]> q = new ArrayDeque<>();
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
@@ -31,101 +28,102 @@ public class 새로운게임2 {
 		for (int i = 0; i < n; i++) {
 			String[] str = br.readLine().split(" ");
 			for (int j = 0; j < n; j++) {
-				board[i][j] = new Box(Integer.parseInt(str[j])); // 칸의 색
+				board[i][j] = new Box(Integer.parseInt(str[j])); 
 			}
 		}
 
-		// 몇번 좌표, 몇번 말인지
+		
+		ho = new Horse[m];
+		
 		for (int i = 0; i < m; i++) {
 			String[] str = br.readLine().split(" ");
 			int r = Integer.parseInt(str[0]) - 1;
 			int c = Integer.parseInt(str[1]) - 1;
 			int t = Integer.parseInt(str[2]) - 1;
 
-			q.add(new Integer[] { r, c, t, i });
-
-			board[r][c].h.add(new Horse(t, i));
+			ho[i] = new Horse(r, c, t, i);
+			board[r][c].addHorse(new Horse(r, c, t, i));
 		}
-		
+
 		answer = 1;
-		L: while (!q.isEmpty()) {
-			Integer[] arr = q.poll();
+		L: while (true) {
+			for(int i=0; i<m; i++) {
+				Horse horse = ho[i];
 
-			// 움직일 말의 현재 좌표
-			int y = arr[0]; 
-			int x = arr[1]; 
-			int t = arr[2]; // 방향
-			int k = arr[3]; // 번호
-			
-			System.out.println(y+" "+x+" "+t+" "+k);
+				// 움직일 말의 현재 좌표
+				int y = horse.r;
+				int x = horse.c;
+				int t = horse.t; // 방향 0 1 2 3
+				int k = horse.k; // 번호 1 2 3 4
 
-			// 이동할 좌표
-			int ny = y + d[t][0];
-			int nx = x + d[t][1];
+				// 이동할 좌표
+				int ny = y + d[t][0];
+				int nx = x + d[t][1];
 
-			if (ny < 0 || nx < 0 || ny >= n || nx >= n ) {
-				int [] n = blue(t, y, x, k);
-				ny = n[0];
-				nx = n[1];
-			} else {
-				switch (board[ny][nx].color) {
-				case 0: // 흰색 
-					board[ny][nx].add(board[y][x].move(k, false));
-					break;
-				case 1: // 빨간색 - 쌓은 후에 순서 반대로
-					board[ny][nx].add(board[y][x].move(k, false));
-					board[ny][nx].reverse();
-					break;
-				case 2: // 파란색 
-					int [] n = blue(t, y, x, k);
+				if ( ny < 0 || nx < 0 || ny >= n || nx >= n || board[ny][nx].color == 2 ) { // 범위 벗어나거나 파란색
+					int[] n = blue(t, y, x, k);
 					ny = n[0];
 					nx = n[1];
-					break;
-				}
+				} else 
+					board[y][x].move(k, ny, nx, false);
+				
+				System.out.println(ny + " " + nx + " " + t + " " + k);
+				board[ny][nx].print();
+				
+				if (board[ny][nx].h.size() >= 4)
+					break L;
+				ho[i] = new Horse( ny, nx, t, k );
 			}
-			if (board[ny][nx].h.size() >= 4) break L;
-			if (answer == 1000) {
+			if(answer == 1000) {
 				answer = -1;
 				break L;
 			}
-
-			if(k == 0) answer ++; // 한 턴마다
-			q.add(new Integer[] { ny, nx, t, k });
+			answer ++;
+			System.out.println(answer+ " turn");
+			
 		}
 
 		System.out.println(answer);
 	}
-	
-	static public int [] blue(int t, int y, int x, int k) {
-		if(t%2 == 0) t+=1;
-		else t-=1;
-		
-		//반대로 한 칸
+
+	static public int[] blue(int t, int y, int x, int k) {
+		// 방향 반대로
+		if (t % 2 == 0)
+			t += 1;
+		else
+			t -= 1;
+
+		// 반대로 한 칸 이동
 		int ny = y + d[t][0];
 		int nx = x + d[t][1];
-		
+
+		// 반대로 이동할 칸이 범위를 벗어나거나 파란색이면 제자리에
 		if (ny < 0 || nx < 0 || ny >= n || nx >= n || board[ny][nx].color == 2) {
 			ny = y;
 			nx = x;
-		}
-		else // 이동할 칸이 파란색이 아니면 이동 
-			board[ny][nx].add(board[y][x].move(k, true));
-		return new int[] {ny, nx};
+		} else // 파란색이 아니면 이동
+			board[y][x].move(k, ny, nx, true);
+			
+		return new int[] { ny, nx, t };
 	}
 
 	static public class Horse {
-		int t, k;
+		int r, c, t, k;
 
-		public Horse(int t, int k) {
+		public Horse(int r, int c, int t, int k) {
 			super();
+			this.r = r;
+			this.c = c;
 			this.t = t; // 말 방향
 			this.k = k; // 말 번호
 
 		}
 
 		private void back() { // 말 방향 반대로
-			if(t%2 == 0) t+=1;
-			else t-=1;
+			if (t % 2 == 0)
+				this.t += 1;
+			else
+				this.t -= 1;
 		}
 	}
 
@@ -139,43 +137,51 @@ public class 새로운게임2 {
 		}
 
 		private void print() {
+			System.out.println("--------h시작");
 			for (Horse horse : h) {
-				System.out.println(horse.t + " " + horse.k);
+				System.out.println(horse.t + " " + (horse.k+1));
 			}
-			System.out.println("끝");
+			System.out.println("--------h끝");
+		}
+		
+		private void moveAdd(int ny, int nx, List<Horse> nh) {
+			if(board[ny][nx].color == 1) {
+				for(int i = nh.size() - 1; i >= 0; i--) {
+					board[ny][nx].addHorse(nh.get(i));
+				}
+			}else
+				for(Horse ho: nh) {
+					board[ny][nx].addHorse(ho);
+				}
 		}
 
-		private void reverse() { // 빨간색 칸으로 이동하면 쌓인 순서 거꾸로
-			List<Horse> nh = new ArrayList<>();
-			for (int i = h.size() - 1; i >= 0; i--) {
-				nh.add(h.get(i));
-			}
-			h = nh;
-		}
-
-		private List<Horse> move(int k, boolean back) { // k번째 위로 쌓인 말들 nh에 저장해 리턴
+		private void move(int k, int ny, int nx, boolean back) { // k번째 위로 쌓인 말들 nh에 저장해 리턴
 			List<Horse> nh = new ArrayList<>();
 			int s = 0;
-			for (int i=0; i<h.size(); i++) {
+			for (int i = 0; i < h.size(); i++) {
 				if (h.get(i).k == k) {
 					s = i;
 					break;
 				}
 			}
-			for(int i=s; i<h.size(); i++) {
+			
+			for (int i = s; i < h.size(); i++) {
 				Horse horse = h.get(i);
-				if(back) horse.back();
+				if (back && i == s) 
+					horse.back();
 				nh.add(horse);
 				h.remove(i);
+				i--;
+				
+				int num = horse.k;
+				ho[num] = new Horse(ny, nx, horse.t, num);
 			}
-
-			return nh;
+			
+			moveAdd(ny, nx, nh);
 		}
-
-		private void add(List<Horse> nh) { // 말 추가하기
-			for (Horse ho : nh) {
+		
+		private void addHorse(Horse ho) { // 말 추가하기
 				h.add(ho);
-			}
 		}
 
 	}
