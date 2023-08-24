@@ -24,9 +24,9 @@
 
 ## 폴더 구조
 
-- 출처/문제 번호/닉네임/
+- 출처/P + 문제 번호/닉네임/
     - e.g.
-        - BOJ/1234/whgdk123/
+        - BOJ/P1234/whgdk123/
 
 ## PR 규칙
 
@@ -37,7 +37,21 @@
 # 문제
 
 <details>
-    <summary><strong>🚨 5주차: 2023-08-03 ~ 2023-08-10</strong></summary>
+    <summary><strong>🚥 6주차: 2023-08-17 ~ 2023-08-24</strong></summary>
+<br/>
+
+|                        문제                         |
+|:-------------------------------------------------:|
+|    [⚾](https://www.acmicpc.net/problem/17281)     |
+|   [종이접기](https://www.acmicpc.net/problem/20187)   |
+| [구슬 탈출 2](https://www.acmicpc.net/problem/13460)  |
+| [새로운 게임 2](https://www.acmicpc.net/problem/17837) |
+|    [비숍](https://www.acmicpc.net/problem/1799)     |
+
+</details>
+
+<details>
+    <summary><strong>🚨 5주차: 2023-08-10 ~ 2023-08-17</strong></summary>
 <br/>
 
 |                                                               문제                                                                |
