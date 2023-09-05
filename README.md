@@ -37,6 +37,18 @@
 # 문제
 
 <details>
+    <summary><strong>🚧 8주차: 2023-08-31 ~ 2023-09-07</strong></summary>
+<br/>
+
+|                         문제                         |
+|:--------------------------------------------------:|
+| [말이 되고픈 원숭이](https://www.acmicpc.net/problem/1600) |
+|   [줄 세우기](https://www.acmicpc.net/problem/2252)    |
+|   [두 로봇](https://www.acmicpc.net/problem/15971)    |
+
+</details>
+
+<details>
     <summary><strong>🚥 6주차: 2023-08-17 ~ 2023-08-24</strong></summary>
 <br/>
 
